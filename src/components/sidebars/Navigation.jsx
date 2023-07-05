@@ -121,7 +121,7 @@ function NavigationBar({ animationVariants }) {
 
         {showMenu && (
           <nav
-            className={`fixed w-full h-[20vh] bg-oliveDark/90 sm:hidden text-white  flex flex-col items-center justify-center gap-10 z-[2000]`}
+            className={`fixed w-full h-[30vh] bg-oliveDark sm:hidden text-white  flex flex-col items-center justify-center gap-10 z-[2000]`}
           >
             <div className="flex">
               {pageNav.map((e, i) => {
