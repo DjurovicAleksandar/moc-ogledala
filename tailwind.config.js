@@ -15,6 +15,8 @@ export default {
         orangeDark: "#9a5d35",
         oliveDark: "#5a5844",
         yellowDark: "#C4BB7D",
+        pastelRed: "#ff6961",
+        pastelBlue: "#A7C7E7",
       },
       animation: {
         "spin-slow": "spin 20s linear infinite",

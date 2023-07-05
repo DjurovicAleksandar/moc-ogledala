@@ -6,7 +6,6 @@ import Layout from "../../auxiliary__components/Layout";
 import AnimatedText from "../../auxiliary__components/AnimatedText";
 
 import peatHeader from "../../../assets/images/services/peat/peatHeader.jpg";
-import peatHeader2 from "../../../assets/images/services/peat/peatheader.png";
 
 import peat1 from "../../../assets/images/services/peat/peat1.jpg";
 import peat2 from "../../../assets/images/services/peat/peat2.jpg";
@@ -19,7 +18,7 @@ function peat() {
     <Layout className="">
       <div className="mb-16 text-gray-900 text-2xl lowercase text-center w-full h-screen font-thin relative">
         <img
-          src={peatHeader2}
+          src={peatHeader}
           alt="Peat header"
           className="w-full h-full object-cover"
         />

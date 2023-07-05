@@ -16,16 +16,16 @@ function bars() {
       <div className="mb-16 text-gray-900 text-2xl lowercase text-center w-full h-screen font-thin relative">
         <img
           src={barsHeader}
-          alt="Peat header"
+          alt="Bars header"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 w-full h-full flex items-center justify-end">
           <div className="mr-28 flex flex-col items-center justify-center gap-4">
             <AnimatedText
               text="Otključavanje unutrašnje harmonije dodirom"
-              className="text-2xl lg:text-5xl text-right"
+              className="text-2xl sm:text-5xl text-right sm:w-[500px]"
             />
-            <h3 className="text-base lg:text-lg text-black text-right font-medium w-[200px] self-end">
+            <h3 className="text-base lg:text-lg text-[#8c7a73] text-justify font-medium w-[300px] self-end">
               Put do ravnoteže, lečenja i transformacije.
             </h3>
             <a
@@ -33,20 +33,22 @@ function bars() {
               href="tel:00393772648078"
               target="_blank"
             >
-              Zakažite seansu.
+              book
             </a>
           </div>
         </div>
       </div>
       <div className="p-4 tracking-wider sm:grid grid-cols-1 lg:grid-cols-3 grid-rows-3 gap-x-6 gap-y-6">
         {/* 1 */}
-        <div className="text-cyan-100 min-h-[300px] bg-purple-300 flex gap-4 items-center justify-between rounded-md col-span-2 p-8 hover:scale-105 duration-300 ease-linear">
+        <div className="text-cyan-100 min-h-[300px] bg-purpleDark flex gap-4 items-center justify-between rounded-md col-span-2 p-8 hover:scale-105 duration-300 ease-linear">
           <img className="w-1/2" alt="growth" src={growth} />
           <div className="flex items-center flex-col">
             <h3 className="text-base italic font-light">
               Otključavanje vašeg potencijala
             </h3>
-            <h2 className="text-6xl font-black mb-10">Access Bars</h2>
+            <h2 className="text-4xl lg:text-6xl font-black mb-10">
+              Access Bars
+            </h2>
 
             <p className="text-xs text-left font-medium">
               Otkrijte transformativnu moć Access Bars-a, nežne terapije dodirom
@@ -57,7 +59,7 @@ function bars() {
           </div>
         </div>
         {/* 2 */}
-        <div className="text-purple-950 min-h-[300px] bg-orange-100 row-span-2 flex flex-col items-center justify-center rounded-lg p-8 hover:scale-105 duration-300 ease-linear">
+        <div className="text-purpleDark min-h-[300px] bg-orange-100 row-span-2 flex flex-col items-center justify-center rounded-lg p-8 hover:scale-105 duration-300 ease-linear">
           <img className="" alt="growth" src={creative} />
           <div className="flex flex-col items-center justify-center">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-10 text-center">
@@ -72,13 +74,13 @@ function bars() {
           </div>
         </div>
         {/* 3 */}
-        <div className="text-emerald-700 min-h-[300px] row-span-2 flex gap-x-6 gap-y-6 col-span-2">
-          <div className="w-1/2 h-full hover:scale-105 duration-300 ease-linear flex flex-col gap-6">
+        <div className="text-oliveDark min-h-[300px] row-span-2 sm:flex sm:gap-x-6 sm:gap-y-6 col-span-2">
+          <div className="w-full lg:w-1/2  h-full hover:scale-105 duration-300 ease-linear sm:flex flex-col gap-6">
             <div className="w-full h-1/2 bg-orange-200 rounded-lg p-8">
               <img className="w-1/2 mx-auto" alt="growth" src={change} />
               <div className="flex flex-col items-center justify-center">
-                <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-10 text-center">
-                  Prihvatite transformaciju
+                <h2 className="text-xl sm:text-4xl lg:text-5xl font-black mb-10 text-center">
+                  Transformiši se
                 </h2>
                 <p className="text-xs text-center font-medium w-4/5">
                   Prihvatite transformativni potencijal Access Bars-a dok
@@ -91,7 +93,7 @@ function bars() {
             <div className="hover:scale-105 duration-300 ease-linear w-full h-1/2 bg-violet-300 rounded-lg p-8 pt-0 text-blue-800">
               <img className="mx-auto" alt="growth" src={key} />
               <div className="">
-                <h2 className="text-2xl font-black text-center">
+                <h2 className="text-lg lg:text-2xl font-black text-center">
                   Otključajte svoj puni potencijal, oslobodite se ograničenja i
                   pozovite veću lakoću i radost u svoj život.
                 </h2>
@@ -101,7 +103,7 @@ function bars() {
               </div>
             </div>
           </div>
-          <div className="hover:scale-105 duration-300 ease-linear w-1/2 h-full bg-red-200 flex flex-col items-center justify-center rounded-lg p-8">
+          <div className="hover:scale-105 duration-300 ease-linear w-full lg:w-1/2 h-full bg-red-200 flex flex-col items-center justify-center rounded-lg p-8">
             <img className="" alt="growth" src={selfcare} />
             <div className="flex flex-col items-center justify-center">
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-10 text-center text-purple-950">
@@ -117,7 +119,7 @@ function bars() {
           </div>
         </div>
         {/* 4 */}
-        <div className="min-h-[300px] bg-emerald-700 rounded-lg p-8 flex items-center justify-between hover:scale-105 duration-300 ease-linear">
+        <div className="min-h-[300px] bg-oliveDark rounded-lg p-8 flex items-center justify-between hover:scale-105 duration-300 ease-linear">
           <div className="flex flex-col items-center justify-start h-full">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-10 text-center text-orange-100">
               Lični razvoj

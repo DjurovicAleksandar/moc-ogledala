@@ -44,16 +44,16 @@ function meditation() {
       <div className="mb-16 text-gray-900 text-2xl lowercase text-center w-full h-screen font-thin relative">
         <img
           src={meditationHeader}
-          alt="Meditation header"
+          alt="Peat header"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 w-full h-full flex items-center justify-end">
           <div className="mr-28 flex flex-col items-center justify-center gap-4">
             <AnimatedText
               text="Nauči da se opustiš i rešiš stresa"
-              className="text-2xl lg:text-5xl text-right"
+              className="text-2xl sm:text-5xl text-right sm:w-[500px]"
             />
-            <h3 className="text-base lg:text-lg text-black text-right font-medium w-[200px] self-end">
+            <h3 className="text-base lg:text-lg text-[#8c7a73] text-justify font-medium w-[300px] self-end">
               Vođeno putovanje kroz sadašnji trenutak.
             </h3>
             <a
@@ -61,7 +61,7 @@ function meditation() {
               href="tel:00393772648078"
               target="_blank"
             >
-              Više Informacija
+              book
             </a>
           </div>
         </div>
@@ -77,28 +77,28 @@ function meditation() {
         </p>
         <ul className="flex flex-col gap-2 w-full font-bold sm:w-[600px] lg:w-[800px] ">
           <li className="">
-            <a className="text-red-500 font-medium" href="#whatismeditation">
+            <a className="text-pastelRed font-medium" href="#whatismeditation">
               Šta je meditacija?
             </a>
-            <div className="w-full bg-red-300 h-[1px] my-1" />
+            <div className="w-full bg-pastelRed h-[1px] my-1" />
           </li>
           <li className="">
-            <a className="text-blue-500 font-medium" href="#whytomeditate">
+            <a className="text-pastelBlue font-medium" href="#whytomeditate">
               Zašto meditirati?
             </a>
-            <div className="w-full bg-blue-300 h-[1px] my-1" />
+            <div className="w-full bg-pastelBlue h-[1px] my-1" />
           </li>
           <li className="">
-            <a className="text-green-500 font-medium" href="#howtomeditate">
+            <a className="text-oliveDark font-medium" href="#howtomeditate">
               Kako meditirati?
             </a>
-            <div className="w-full bg-green-300 h-[1px] my-1" />
+            <div className="w-full bg-oliveDark h-[1px] my-1" />
           </li>
           <li className="">
-            <a className="text-yellow-500 font-medium" href="#freemditations">
+            <a className="text-yellowDark font-medium" href="#freemditations">
               Besplatne meditacije
             </a>
-            <div className="w-full bg-yellow-300 h-[1px] my-1" />
+            <div className="w-full bg-yellowDark h-[1px] my-1" />
           </li>
         </ul>
 
@@ -108,14 +108,12 @@ function meditation() {
           className="w-[310px] sm:w-[600px] lg:w-[800px]  object-cover mx-auto my-2"
         />
         {/* Sta je meditacija */}
-        <section className="my-6" id="whatismeditation">
-          <h2 className="text-4xl font-bold mb-2 text-red-300">
-            Šta je meditacija?
-          </h2>
+        <section className="my-6 text-pastelRed" id="whatismeditation">
+          <h2 className="text-4xl font-bold mb-2 ">Šta je meditacija?</h2>
           <h3 className="text-xl font-light mb-2 ">
             Kratko objašnjenje postupka
           </h3>
-          <div className="w-full bg-red-300 h-[5px] my-3 sm:w-[600px] lg:w-[800px] " />
+          <div className="w-full bg-pastelRed h-[5px] my-3 sm:w-[600px] lg:w-[800px] " />
           <p className="sm:w-[600px] lg:w-[800px]  text-base font-medium text-justify">
             Kako se uči meditacija? U meditaciji svesnosti učimo kako da
             obratimo pažnju na disanje dok ulazi i izlazi, i primetimo kada um
@@ -132,14 +130,12 @@ function meditation() {
           </p>
         </section>
         {/* Zašto meditirati */}
-        <section className="my-6" id="whytomeditate">
-          <h2 className="text-4xl font-bold mb-2 text-blue-300">
-            Zašto meditirati?
-          </h2>
+        <section className="my-6 text-pastelBlue" id="whytomeditate">
+          <h2 className="text-4xl font-bold mb-2 ">Zašto meditirati?</h2>
           <h3 className="text-xl font-light mb-2 ">
             Spisak prednosti koje su povezane sa učenjem meditacije.
           </h3>
-          <div className="w-full bg-blue-300 h-[5px] my-3 sm:w-[600px] lg:w-[800px] " />
+          <div className="w-full bg-pastelBlue h-[5px] my-3 sm:w-[600px] lg:w-[800px] " />
           <p className="text-base font-medium text-justify sm:w-[600px] lg:w-[800px] ">
             Iako meditacija nije lek za sve, ona sigurno može da vam pruži nešto
             preko potrebnog prostora u vašem životu. Ponekad je to sve što nam
@@ -163,14 +159,12 @@ function meditation() {
           </ol>
         </section>
         {/* Kako meditirati */}
-        <section className="my-6" id="howtomeditate">
-          <h2 className="text-4xl font-bold mb-2 text-green-300">
-            Kako meditirati?
-          </h2>
+        <section className="my-6 text-oliveDark" id="howtomeditate">
+          <h2 className="text-4xl font-bold mb-2 ">Kako meditirati?</h2>
           <h3 className="text-xl font-light mb-2 ">
             Meditacija je nešto što može svako, a evo i kako.
           </h3>
-          <div className="w-full bg-green-300 h-[5px] my-3 sm:w-[600px] lg:w-[800px] " />
+          <div className="w-full bg-oliveDark h-[5px] my-3 sm:w-[600px] lg:w-[800px] " />
           <p className="text-base font-medium text-justify sm:w-[600px] lg:w-[800px] ">
             Meditacija je jednostavnija (i teža) nego što većina ljudi misli.
             Pročitajte ove korake, uverite se da ste negde gde možete da se
@@ -214,19 +208,17 @@ function meditation() {
           </p>
         </section>
         {/* Besplatne meditacije */}
-        <section className="my-6" id="freemditations">
-          <h2 className="text-4xl font-bold mb-2 text-yellow-300">
-            Besplatne meditacije
-          </h2>
+        <section className="my-6 text-yellowDark" id="freemditations">
+          <h2 className="text-4xl font-bold mb-2 ">Besplatne meditacije</h2>
           <h3 className="text-xl font-light mb-2 ">
             Prepustite se nekoj od mojih meditacija.
           </h3>
-          <div className="w-full bg-yellow-300 h-[5px] my-3 sm:w-[600px] lg:w-[800px] " />
+          <div className="w-full bg-yellowDark h-[5px] my-3 sm:w-[600px] lg:w-[800px] " />
           <div className="my-5 lg:grid grid-cols-2 lg:w-[800px] ">
             {videoArr.map(({ title, id, thumb }, i) => {
               return (
                 <div className="" key={id}>
-                  <h2 className="mx-auto text-xl font-bold my-4 text-center text-yellow-500">
+                  <h2 className="mx-auto text-xl font-bold my-4 text-center text-yellowDark">
                     {title}
                   </h2>
                   <div className="relative lg:w-[380px] mx-auto">
@@ -240,7 +232,7 @@ function meditation() {
                       className="btn__glow mx-auto mt-2 absolute w-full h-full inset-0 flex items-center justify-center cursor-pointer"
                       onClick={() => openModal(i)}
                     >
-                      <img src={iconPlay} alt="play" />
+                      <img className="w-12" src={iconPlay} alt="play" />
                     </button>
                   </div>
                   <ModalVideo
