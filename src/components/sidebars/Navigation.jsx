@@ -90,7 +90,7 @@ function NavigationBar({ animationVariants }) {
                   {e.submenu.map((dropdown, i) => {
                     return (
                       <motion.li whileHover={{ scale: 1.1 }} key={i}>
-                        <a href={dropdown.href}>{dropdown.title}</a>
+                        <Link to={dropdown.href}>{dropdown.title}</Link>
                       </motion.li>
                     );
                   })}
