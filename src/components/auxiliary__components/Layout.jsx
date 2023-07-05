@@ -24,7 +24,7 @@ function Layout({ children, className }) {
         //   setShowModal(true);
         // else setShowModal(false);
       }}
-      className={`z-0 bg-light w-full sm:mx-auto sm:w-[95%] lg:w-full  ${className} layout`}
+      className={`z-0 bg-light w-full sm:mx-auto sm:w-[95%] lg:w-full ${className}`}
     >
       {children}
       {/* {isVissible && (

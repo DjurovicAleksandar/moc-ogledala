@@ -14,15 +14,17 @@ function Testimonials() {
       <div className="container my-24 mx-auto md:px-6">
         <section className="mb-32 text-center">
           <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
-            <div className="mb-12 md:mb-0">
+            <div className="mb-12 md:mb-0 text-purpleDark">
               <div className="mb-6 flex justify-center">
                 <img
                   src="https://mail.google.com/mail/u/0?ui=2&ik=147900d21c&attid=0.1.1&permmsgid=msg-f:1764873568398276723&th=187e1728e5daf873&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ9NPZe2J42_zVKDfvwiGnxtS9SZ-lAhZbockQCWxKN-2jo0F0IloMMS2HMa8IPa_ATdz-y18d0e3AlCNbZuaRhpaiiHdxAG-nr36CLfomH3UPhzi_qltmVkTo4&disp=emb"
                   className="w-32 h-32 object-cover object-top rounded-full shadow-lg dark:shadow-black/20"
                 />
               </div>
-              <h5 className="mb-2 text-lg font-bold">Matea Topić</h5>
-              <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
+              <h5 className="text-pastelBlue mb-2 text-lg font-bold">
+                Matea Topić
+              </h5>
+              <h6 className="text-oliveDark mb-4 font-medium  dark:text-purpleDark-400">
                 Pisac
               </h6>
               <p className="mb-4 text-xs sm:text-base w-[310px] mx-auto md:w-full italic">
@@ -32,7 +34,7 @@ function Testimonials() {
                 "na kredit" nije opcija nikakva i da ono što nas sve ubija
                 iznutra je zapravo lijenost.
                 <a
-                  className="w-full flex justify-center items-center gap-2 mt-2  text-[#3b5998]"
+                  className="w-full flex justify-center items-center gap-2 mt-2  text-pastelBlue"
                   href="https://www.facebook.com/matea.bobek"
                   target="_blank"
                 >
@@ -114,15 +116,17 @@ function Testimonials() {
                 </li>
               </ul>
             </div>
-            <div className="mb-12 md:mb-0">
+            <div className="mb-12 md:mb-0 text-purpleDark">
               <div className="mb-6 flex justify-center">
                 <img
                   src="https://mail.google.com/mail/u/0?ui=2&ik=147900d21c&attid=0.1.1&permmsgid=msg-f:1764873668454722146&th=187e174031af2a62&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8yRsSHwn6ELpFjmMdBq3UnXAY863HOR4kxmqEdZ1VGVgnnrYLyLZlBcROlwDn84HBTBBcyA93FZHnl8udvqmEC-vkga6iSOauYQh82e9eZb99m2BUouFGdl0Y&disp=emb"
                   className="w-32 h-32 rounded-full shadow-lg dark:shadow-black/20"
                 />
               </div>
-              <h5 className="mb-2 text-lg font-bold">Nikolina Nina Topić</h5>
-              <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
+              <h5 className="text-pastelBlue mb-2 text-lg font-bold">
+                Nikolina Nina Topić
+              </h5>
+              <h6 className="text-oliveGreen mb-4 font-medium text-oliveDark dark:text-purpleDark-400">
                 Inženjer
               </h6>
               <p className="mb-4 text-xs sm:text-base w-[310px] mx-auto md:w-full">
@@ -134,7 +138,7 @@ function Testimonials() {
                 vremena obratite sami sebi. Njena MOĆ OGLEDALA funkcionira.
                 Itekako funkcionira.
                 <a
-                  className="w-full flex justify-center items-center gap-2 mt-2  text-[#3b5998]"
+                  className="w-full flex justify-center items-center gap-2 mt-2  text-pastelBlue"
                   href="https://www.facebook.com/nikolinaparad27"
                   target="_blank"
                 >
@@ -216,17 +220,17 @@ function Testimonials() {
                 </li>
               </ul>
             </div>
-            <div className="mb-0">
-              <div className="mb-6 flex justify-center">
+            <div className="mb-0 text-purpleDark">
+              <div className="mb-6 flex justify-center ">
                 <img
                   src="https://mail.google.com/mail/u/0?ui=2&ik=147900d21c&attid=0.1.1&permmsgid=msg-f:1764874473189940571&th=187e17fb8fa41d5b&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_AMecJJgG5Hr8PeONk5El-u1jbjuYZ-SouT19SRcXR9izTSmeTQjYQZF-X4eTwkkvzH4KeaXqbEBRAWs0G659XrWnTrLz6q9-50meJlioMBS0UEOnvqBfzC-Y&disp=emb"
                   className="w-32 h-32 rounded-full shadow-lg dark:shadow-black/20"
                 />
               </div>
-              <h5 className="mb-2 text-lg font-bold">Marija Nešić</h5>
-              <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
-                Domaćica
-              </h6>
+              <h5 className="text-pastelBlue mb-2 text-lg font-bold">
+                Marija Nešić
+              </h5>
+              <h6 className="mb-4 font-medium  text-oliveDark">Domaćica</h6>
               <p className="mb-4 text-xs sm:text-base w-[310px] mx-auto md:w-full">
                 Zastani na tren, odradi meditaciju. Pa kreni dalje, spusti ego.
                 Gledaj svojim očima, videćeš i ljude koji su kao svetlo na kraju
@@ -234,7 +238,7 @@ function Testimonials() {
                 upoznala moju Zvezdanu koja je moja zvezda vodilja, koja mi je
                 bila podrska i koja me je saslušala i razumela šta prolazim.
                 <a
-                  className="w-full flex justify-center items-center gap-2 mt-2  text-[#3b5998]"
+                  className="w-full flex justify-center items-center gap-2 mt-2  text-pastelBlue"
                   href="https://www.facebook.com/marijastanisavljevicok"
                   target="_blank"
                 >

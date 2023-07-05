@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Layout from "../auxiliary__components/Layout";
 import { motion } from "framer-motion";
+import footerHeader from "../../assets/images/about/aboutHeader.jpg";
 
 function Footer() {
   const footerNav = [
@@ -39,9 +40,9 @@ function Footer() {
   ];
 
   return (
-    <footer className="w-full border-t-[1px] border-dark font-medium text-xs">
-      <Layout className="pt-8 pb-2 p-4">
-        <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:gap-0 gap-4">
+    <footer className="w-full h-[200px] border-t-[1px] border-oliveDark text-black/80 font-medium text-xs relative">
+      <div className="absolute inset-0">
+        <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:gap-0 gap-4 p-2 ">
           <p className="lg:w-[600px] text-[10px] lg:text-base">
             <span className="mb-1 inline-block">
               {" "}
@@ -60,7 +61,7 @@ function Footer() {
                     if (e.href === "#") scrollToTop();
                     else window.location.href = e.href;
                   }}
-                  whileHover={{ scale: 1.1 }}
+                  whileHover={{ scale: 1.1, color: "#ff6961" }}
                   key={e.title + i}
                   className="hover:scale-110 duration-100 ease-linear my-1 lg:my-0 cursor-pointer"
                 >
@@ -78,12 +79,17 @@ function Footer() {
           </ul>
         </div>
         <div className="h-[1px] bg-dark w-full my-2">&nbsp;</div>
-        <div className="w-full flex items-center justify-center">
+        <div className="w-full flex items-center justify-center py-2">
           <a target="_blank" href="https://aleksandardjurovic.netlify.app/">
             Copyright © Developed by Aleksandar Đurović
           </a>
         </div>
-      </Layout>
+      </div>
+      <img
+        src={footerHeader}
+        alt="Bars header"
+        className="w-full h-full object-cover"
+      />
     </footer>
   );
 }

@@ -56,7 +56,7 @@ function Skills() {
           return (
             <motion.div
               key={`${title}-${index}`}
-              className="col-span-8 lg:col-span-4 flex flex-col items-center justify-center text-justify p-4 mt-24 shadow-dark shadow-2xl"
+              className="col-span-8 lg:col-span-4 flex flex-col items-center justify-center text-justify p-4 mt-24 shadow-dark shadow-2xl text-oliveDark"
               variants={animationVariants}
               initial="initial"
               whileInView="whileInView"
@@ -64,10 +64,10 @@ function Skills() {
             >
               <div className="flex items-center justify-around w-3/4 text-center">
                 <div>
-                  <h2 className="text-base lg:text-2xl font-black uppercase text-dark">
+                  <h2 className="text-base lg:text-2xl font-black uppercase text-pastelRed">
                     {title}
                   </h2>
-                  <h3 className="text-xs lg:text-xl font-medium lowercase text-gray-400">
+                  <h3 className="text-xs lg:text-xl font-medium lowercase text-pastelBlue">
                     {subtitle}
                   </h3>
                 </div>

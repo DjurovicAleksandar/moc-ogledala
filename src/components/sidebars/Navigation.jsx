@@ -81,10 +81,11 @@ function NavigationBar({ animationVariants }) {
         >
           Meni
         </button>
-        <nav className={`hidden sm:flex ranslate-x-[-30%]`}>
+        <nav className={`hidden sm:flex ranslate-x-[-30%] text-oliveDark`}>
           {pageNav.map((e, i) => {
             return (
-              <div
+              <motion.div
+                whileHover={{ color: "#ff6961" }}
                 key={i}
                 className={`${
                   i !== pageNav.length - 1 && "mr-4"
@@ -99,7 +100,10 @@ function NavigationBar({ animationVariants }) {
                   >
                     {e.submenu.map((dropdown, i) => {
                       return (
-                        <motion.li whileHover={{ scale: 1.1 }} key={i}>
+                        <motion.li
+                          whileHover={{ scale: 1.1, color: "#ff6961" }}
+                          key={i}
+                        >
                           <Link to={dropdown.href}>{dropdown.title}</Link>
                         </motion.li>
                       );
@@ -108,13 +112,13 @@ function NavigationBar({ animationVariants }) {
                 ) : null}
 
                 <span
-                  className={`absolute inline-block left-0 -bottom-0.5 h-[0.5px] group-hover:w-full duration-300 ease-in-out bg-dark ${
+                  className={`absolute inline-block left-0 -bottom-0.5 h-[0.5px] group-hover:w-full duration-300 ease-in-out bg-pastelRed ${
                     location.pathname === e.href ? "w-full" : "w-0"
                   }`}
                 >
                   &nbsp;
                 </span>
-              </div>
+              </motion.div>
             );
           })}
         </nav>
