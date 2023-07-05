@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .text__container {
+    background: url("https://farm4.staticflickr.com/3262/3112684900_497293aa3a_m.jpg")
+      no-repeat center center;
+    background-size: 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .text__container h3 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  #book__section {
+    background: url("../../public/images/books/bookBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .modal {
+    background: url("../../public/images/books/modalBg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
