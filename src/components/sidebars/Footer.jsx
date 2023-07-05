@@ -85,11 +85,6 @@ function Footer() {
           </a>
         </div>
       </div>
-      <img
-        src={footerHeader}
-        alt="Bars header"
-        className="w-full h-full object-cover"
-      />
     </footer>
   );
 }

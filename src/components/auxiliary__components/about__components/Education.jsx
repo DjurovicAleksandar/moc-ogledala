@@ -54,10 +54,10 @@ function Education() {
 
   return (
     <div className="my-64">
-      <h3 className="text-base lg:text-2xl font-light w-full text-center text-gray-900 ">
+      <h3 className="text-base lg:text-2xl font-light w-full text-center text-oliveDark ">
         Znanje koje sam stekla
       </h3>
-      <h2 className="text-dark/50 font-black capitalize text-base lg:text-8xl w-full text-center">
+      <h2 className="text-purpleDark font-black capitalize text-base lg:text-8xl w-full text-center">
         Edukacija
       </h2>
       <main
@@ -66,7 +66,7 @@ function Education() {
       >
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="hidden lg:block lg:w-[4px] h-full bg-dark origin-top lg:absolute left-4 top-0"
+          className="invisible  h-full lg:visible absolute left-[1.1rem] top-0 w-[4px] bg-purpleDark origin-top"
         />
 
         <ul className="w-full flex flex-col items-start justify-between gap-10 mt-9 ml-9">

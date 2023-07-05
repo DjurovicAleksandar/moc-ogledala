@@ -16,8 +16,8 @@ function About() {
 
   return (
     <Layout className="">
-      <div className="bg-red-50 w-full h-full relative">
-        <div className="absolute inset-0">
+      <div className="w-full h-full relative">
+        <div className="">
           <div className="text-gray-900 text-xs lg:text-2xl lowercase text-center w-full font-medium z-50 pt-32">
             <h3 className="mb-5">Ko sam zapravo ja?</h3>
             <AnimatedText
@@ -60,7 +60,7 @@ function About() {
                 i razvoj, "Moć Ogledala". Možda sam baš ja osoba koja ti može
                 pomoći!?
                 <br />
-                <a
+                {/* <a
                   className="hover:rounded-full hover:bg-dark hover:border-transparent hover:text-light duration-200 ease-linear border-[1px] border-dark inline-block w-full text-center mt-2 font-medium"
                   href="tel:00393772648078"
                   target="_blank"
@@ -71,8 +71,15 @@ function About() {
                   }
                 >
                   Slobodno se javi za besplatnu konsultaciju!
-                </a>
+                </a> */}
               </p>
+              <a
+                className="rounded-3xl bg-purpleDark text-white px-8 py-4 text-center font-bold mt-7 hover:scale-105 active:scale-95 duration-300 ease-linear"
+                href="tel:00393772648078"
+                target="_blank"
+              >
+                Slobodno se javi za besplatnu konsultaciju!
+              </a>
             </div>
             {/* List */}
             <div className="col-span-2 flex flex-col items-center lg:items-end justify-between mt-4">
@@ -84,7 +91,7 @@ function About() {
                     className="flex flex-col items-end justify-end"
                   >
                     <AnimatedNumber value={num} />
-                    <h2 className="text-xs lg:text-base font-medium uppercase text-black/70">
+                    <h2 className="text-xs lg:text-base font-medium uppercase text-oliveDark">
                       {title}
                     </h2>
                   </div>
@@ -93,7 +100,7 @@ function About() {
             </div>
           </div>
         </div>
-        <img src={aboutHeader} alt="about header" className="w-full h-full" />
+        {/* <img src={aboutHeader} alt="about header" className="w-full h-full" /> */}
       </div>
 
       <Skills />

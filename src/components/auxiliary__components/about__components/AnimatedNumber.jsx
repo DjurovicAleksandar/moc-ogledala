@@ -24,7 +24,7 @@ const AnimatedNumber = ({ value }) => {
   }, [springValue, value]);
 
   return (
-    <div className="text-xl lg:text-7xl font-bold mx-auto lg:mx-0 my-5 text-white">
+    <div className="text-xl lg:text-7xl font-bold mx-auto lg:mx-0 my-5 text-purpleDark">
       <span ref={ref} className="inline-block font-bold">
         {value}
       </span>

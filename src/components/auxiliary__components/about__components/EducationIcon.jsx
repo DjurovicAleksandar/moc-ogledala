@@ -7,13 +7,13 @@ function EducationIcon({ reference }) {
   });
 
   return (
-    <figure className="absolute left-0 stroke-dark -translate-x-1/2">
+    <figure className="absolute left-0 stroke-purpleDark -translate-x-1/2">
       <svg width={75} height={75} viewBox="0 0 100 100">
         <circle
           cx="75"
           cy="50"
           r="20"
-          className="stroke-primary stroke-1 fill-none"
+          className="stroke-purpleDark stroke-1 fill-none"
         />
         <motion.circle
           style={{ pathLength: scrollYProgress }}
@@ -26,7 +26,7 @@ function EducationIcon({ reference }) {
           cx="75"
           cy="50"
           r="10"
-          className="stroke-1 fill-primary animate-pulse"
+          className="stroke-1 fill-pastelRed animate-pulse"
         />
       </svg>
     </figure>
