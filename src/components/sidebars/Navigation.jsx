@@ -125,7 +125,7 @@ function NavigationBar({ animationVariants }) {
 
         {showMenu && (
           <nav
-            className={`fixed w-full h-[30vh] bg-oliveDark sm:hidden text-white  flex flex-col items-center justify-center gap-10 z-[2000]`}
+            className={`fixed w-full h-[40vh] bg-oliveDark sm:hidden text-white  flex flex-col items-center justify-center gap-10 z-[2000]`}
           >
             <div className="flex">
               {pageNav.map((e, i) => {
@@ -166,7 +166,7 @@ function NavigationBar({ animationVariants }) {
             </div>
 
             <button
-              className="rounded-full border-white border-[1px] px-3 py-1 hover:bg-white hover:text-oliveDark hover:border-oliveDark cursor-pointer ease-linear duration-300"
+              className="rounded-full border-white border-[1px] px-3 py-1 hover:bg-white hover:text-oliveDark hover:border-oliveDark cursor-pointer ease-linear duration-300 translate-y-[4rem]"
               onClick={() => setShowMenu(false)}
             >
               X

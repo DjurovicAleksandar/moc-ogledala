@@ -23,12 +23,6 @@
     max-width: 100%;
   }
 
-  footer {
-    background: url("../../public/images/about/aboutHeader.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
   .text__container {
     background: url("https://farm4.staticflickr.com/3262/3112684900_497293aa3a_m.jpg")
       no-repeat center center;
@@ -53,5 +47,21 @@
     background: url("../../public/images/books/modalBg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .btn {
+    background: #5a5844;
+    color: #c4bb7d;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    /* box-shadow: 0 1px 12px 4px #c47da2; */
+
+    transition: all 0.3s linear;
+  }
+
+  .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 1px 12px 4px white;
   }
 }

@@ -47,8 +47,8 @@ function meditation() {
           alt="Peat header"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 w-full h-full flex items-center justify-end">
-          <div className="mr-28 flex flex-col items-center justify-center gap-4">
+        <div className="absolute inset-0 w-full h-full flex items-center justify-end p-4">
+          <div className="lg:mr-28 flex flex-col items-center justify-center gap-4">
             <AnimatedText
               text="Nauči da se opustiš i rešiš stresa"
               className="text-2xl sm:text-5xl text-right sm:w-[500px]"

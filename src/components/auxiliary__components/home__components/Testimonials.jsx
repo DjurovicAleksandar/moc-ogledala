@@ -4,11 +4,11 @@ function Testimonials() {
   return (
     <div className="my-64 w-full  relative">
       <div className="text-center mb-32">
-        <h3 className="text-xs lg:text-2xl font-light text-gray-900 ">
+        <h3 className="text-xs lg:text-2xl font-light text-oliveDark">
           Rekli su o meni...
         </h3>
-        <h2 className="text-dark/50 font-black capitalize text-4xl pt-2 lg:text-8xl">
-          Svjedočanstva
+        <h2 className="text-purpleDark font-black capitalize text-4xl pt-2 lg:text-8xl">
+          Svedočanstva
         </h2>
       </div>
       <div className="container my-24 mx-auto md:px-6">

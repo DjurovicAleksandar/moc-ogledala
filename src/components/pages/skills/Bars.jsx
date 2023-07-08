@@ -19,11 +19,11 @@ function bars() {
           alt="Bars header"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 w-full h-full flex items-center justify-end">
-          <div className="mr-28 flex flex-col items-center justify-center gap-4">
+        <div className="absolute inset-0 w-full h-full flex items-center justify-end p-4">
+          <div className="lg:mr-28 flex flex-col items-center justify-center gap-4">
             <AnimatedText
               text="Otključavanje unutrašnje harmonije dodirom"
-              className="text-2xl sm:text-5xl text-right sm:w-[500px]"
+              className="text-2xl sm:text-5xl text-right sm:w-[500px] "
             />
             <h3 className="text-base lg:text-lg text-[#8c7a73] text-justify font-medium w-[300px] self-end">
               Put do ravnoteže, lečenja i transformacije.
