@@ -2,24 +2,25 @@ import mirrorImg from "../../assets/images/home/mirror.jpg";
 import AnimatedText from "../auxiliary__components/AnimatedText";
 import Layout from "../auxiliary__components/Layout";
 import Testimonials from "../auxiliary__components/home__components/Testimonials";
+import TransitionEffect from "../auxiliary__components/TransitionEffect";
 
-import mirror from "../../assets/images/home/mirror.jpg";
 function Home() {
   return (
     <>
-      <Layout className="flex flex-col items-center justify-center">
+      <Layout className="flex flex-col items-center justify-center pt-16">
+        <TransitionEffect />
         <div className="mb-16 text-gray-900 text-2xl lowercase text-center w-full h-screen font-thin relative">
           <img
-            src={mirror}
+            src={mirrorImg}
             alt="Bars header"
             className="w-full h-full object-contain"
           />
           <div className="absolute inset-0 w-full h-full flex items-center justify-end">
-            <div className="bg-red-200/50 rounded-full flex flex-col lg:flex-row items-center justify-around">
+            <div className="bg-red-200/30 rounded-full flex flex-col lg:flex-row items-center justify-around">
               <div className="lg:w-1/2 flex flex-col items-center justify-center self-center text-black/70 font-medium">
                 <AnimatedText
                   text="MEDITACIJA PEAT BARS COACHING"
-                  className="text-2xl lg:text-6xl text-center lg:text-right"
+                  className="text-2xl lg:text-6xl text-center lg:text-right text-purpleDark"
                 />
                 <h3 className="text-base lg:text-2xl capitalize text-center mt-5 sm:mt-0 mb-20 sm:mb-5 lg:text-right w-full">
                   &#9788; Harmonija duha, reči i misli &#9788;

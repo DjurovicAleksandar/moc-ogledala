@@ -5,7 +5,7 @@ import Education from "../auxiliary__components/about__components/Education";
 import Skills from "../auxiliary__components/about__components/Skills";
 
 import profilePicture from "../../assets/images/about/zvezdana.jpg";
-import aboutHeader from "../../assets/images/about/aboutHeader.jpg";
+import TransitionEffect from "../auxiliary__components/TransitionEffect";
 
 function About() {
   const serviceNumbers = [
@@ -16,13 +16,14 @@ function About() {
 
   return (
     <Layout className="">
+      <TransitionEffect />
       <div className="w-full h-full relative">
         <div className="">
           <div className="text-gray-900 text-xs lg:text-2xl lowercase text-center w-full font-medium z-50 pt-32">
-            <h3 className="mb-5">Ko sam zapravo ja?</h3>
+            <h3 className="mb-5 text-oliveDark">Ko sam zapravo ja?</h3>
             <AnimatedText
               text="O meni"
-              className="text-2xl lg:text-6xl text-center"
+              className="text-2xl lg:text-6xl text-center text-purpleDark"
             />
           </div>
           <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-between p-4 z-50">
@@ -60,21 +61,9 @@ function About() {
                 i razvoj, "Moć Ogledala". Možda sam baš ja osoba koja ti može
                 pomoći!?
                 <br />
-                {/* <a
-                  className="hover:rounded-full hover:bg-dark hover:border-transparent hover:text-light duration-200 ease-linear border-[1px] border-dark inline-block w-full text-center mt-2 font-medium"
-                  href="tel:00393772648078"
-                  target="_blank"
-                  onMouseEnter={(e) => (e.target.textContent = "Pozovi")}
-                  onMouseLeave={(e) =>
-                    (e.target.textContent =
-                      " Slobodno se javi za besplatnu konsultaciju!")
-                  }
-                >
-                  Slobodno se javi za besplatnu konsultaciju!
-                </a> */}
               </p>
               <a
-                className="rounded-3xl bg-purpleDark text-white px-8 py-4 text-center font-bold mt-7 hover:scale-105 active:scale-95 duration-300 ease-linear"
+                className="btn  px-8 py-4 text-center font-bold mt-7"
                 href="tel:00393772648078"
                 target="_blank"
               >

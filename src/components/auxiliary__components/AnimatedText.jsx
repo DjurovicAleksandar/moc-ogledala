@@ -8,8 +8,8 @@ function AnimatedText({ text, className = "" }) {
     animate: {
       opacity: 1,
       transition: {
-        delay: 1,
-        staggerChildren: 0.1,
+        delay: 3,
+        staggerChildren: 0.5,
       },
     },
   };

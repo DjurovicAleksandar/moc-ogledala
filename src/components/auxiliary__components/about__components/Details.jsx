@@ -18,9 +18,14 @@ const Details = ({
       <EducationIcon reference={ref} />
       <motion.div
         className="flex flex-col items-start justify-between"
-        initial={{ y: 100, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, type: "spring" }}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        variants={{
+          visible: { opacity: 1, y: 0 },
+          hidden: { opacity: 0, y: 100 },
+        }}
       >
         <h3 className="capitalize font-bold text-base lg:text-2xl text-oliveDark">
           {position}&nbsp;

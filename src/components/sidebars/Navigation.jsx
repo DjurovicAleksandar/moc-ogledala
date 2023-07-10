@@ -71,7 +71,9 @@ function NavigationBar({ animationVariants }) {
     >
       <div className="w-full relative  lg:px-4 py-8 flex items-center justify-between">
         <div className="w-[5rem] sm:w-[7rem] lg:w-[10rem] px-2">
-          <img className="w-full  translate-x-[-30%]" alt="Logo" src={logo} />
+          <Link to="/">
+            <img className="w-full  translate-x-[-30%]" alt="Logo" src={logo} />
+          </Link>
         </div>
         <button
           onClick={() => {

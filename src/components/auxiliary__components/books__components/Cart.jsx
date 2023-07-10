@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function Cart() {
+function Cart({ book, isOpen, setIsOpen }) {
   const [selectedOption, setSelectedOption] = useState("");
 
   const handleOptionChange = (event) => {
@@ -10,7 +10,7 @@ function Cart() {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Handle the submit logic, such as adding the selected option to the cart
-    console.log("Selected Option:", selectedOption);
+    setIsOpen(true);
   };
 
   useEffect(() => {
@@ -33,7 +33,7 @@ function Cart() {
               value="Meko izdanje"
               checked={selectedOption === "Meko izdanje"}
               onChange={handleOptionChange}
-              className="mr-4"
+              className="mr-4 cursor-pointer"
             />
             Meko izdanje
             <span
@@ -71,7 +71,7 @@ function Cart() {
               value="eBook"
               checked={selectedOption === "eBook"}
               onChange={handleOptionChange}
-              className="mr-4"
+              className="mr-4 cursor-pointer"
             />
             Eknjiga
             <span
@@ -97,19 +97,22 @@ function Cart() {
           </div>
         </div>
 
-        <input
-          className="hover:rounded-full hover:bg-dark hover:border-transparent hover:text-light duration-100 ease-linear border-[1px] border-dark px-4 py-2 mt-4"
-          type="submit"
-          value={
-            selectedOption === "eBook"
-              ? "Nastavi sa kupovinom"
-              : "Naručite knjigu"
-          }
-        />
+        <div className="flex flex-col items-center justify-center gap-5">
+          <input
+            className="btn px-4 py-2 mt-4 w-fit"
+            type="submit"
+            value={
+              selectedOption === "eBook"
+                ? "Nastavi sa kupovinom"
+                : "Naručite knjigu"
+            }
+          />
+
+          <a className="btn px-4 py-2 w-fit" href={book} download>
+            Preuzmi deo knjige
+          </a>
+        </div>
       </form>
-      <button className="block mx-auto hover:rounded-full hover:bg-dark hover:border-transparent hover:text-light duration-100 ease-linear border-[1px] border-dark px-4 py-2 mt-28">
-        Preuzmi deo knjige
-      </button>
     </>
   );
 }

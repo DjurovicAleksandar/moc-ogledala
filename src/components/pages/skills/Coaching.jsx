@@ -9,6 +9,10 @@ import Card from "../../auxiliary__components/coaching__components/Card";
 import setgoals from "../../../assets/images/services/coaching/setgoals.png";
 import actionplan from "../../../assets/images/services/coaching/actionplan.png";
 import consistentaction from "../../../assets/images/services/coaching/consistentaction.png";
+import TransitionEffect from "../../auxiliary__components/TransitionEffect";
+
+import { motion } from "framer-motion";
+import FadeInWhenVisible from "../../auxiliary__components/FadeInWhenVisible";
 
 function Coaching() {
   const coachingRoad = [
@@ -31,6 +35,7 @@ function Coaching() {
 
   return (
     <Layout className="">
+      <TransitionEffect />
       <div className="mb-16 text-gray-900 text-2xl lowercase text-center w-full h-screen font-thin relative">
         <img
           src={coachingHeader}
@@ -57,45 +62,111 @@ function Coaching() {
         </div>
       </div>
       <div className="w-full flex flex-col mb-16">
-        <div className="hidden sm:block">
-          <img src={section2} alt="section2" />
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-2 p-8 lg:p-0">
-          {coachingRoad.map(({ title, text, href }, i) => {
-            return (
-              <Card key={i + title} title={title} text={text} href={href} />
-            );
-          })}
-        </div>
+        <FadeInWhenVisible>
+          <div className="hidden sm:block">
+            <img src={section2} alt="section2" />
+          </div>
+        </FadeInWhenVisible>
+        <FadeInWhenVisible>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-2 p-8 lg:p-0">
+            {coachingRoad.map(({ title, text, href }, i) => {
+              return (
+                <Card key={i + title} title={title} text={text} href={href} />
+              );
+            })}
+          </div>
+        </FadeInWhenVisible>
       </div>
       <div className="my-24 text-center md:flex lg:flex-col items-center justify-center italic text-oliveDark">
         <p className="w-4/5 mx-auto">
-          <span className="inline-block bg-purpleDark p-2 my-1 mx-2">
+          <motion.span
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, x: -100 },
+            }}
+            className="inline-block bg-purpleDark p-2 my-1 mx-2"
+          >
             {" "}
             Da li ste spremni da svoj lični rast i razvoj podignete na sledeći
             nivo?
-          </span>
-          <span className="inline-block bg-pastelBlue p-2 my-1 mx-2">
+          </motion.span>
+          <motion.span
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ delay: 0.1, duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, x: 100 },
+            }}
+            className="inline-block bg-pastelBlue p-2 my-1 mx-2"
+          >
             Otključajte svoj puni potencijal i ostvarite svoje ciljeve uz naše
             ekskluzivne treninge.
-          </span>
-          <span className="inline-block bg-pastelRed p-2 my-1 mx-2">
+          </motion.span>
+          <motion.span
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, x: -100 },
+            }}
+            className="inline-block bg-pastelRed p-2 my-1 mx-2"
+          >
             {" "}
             Bez obzira da li težite ka napredovanju u karijeri, poboljšanju
             odnosa ili poboljšanju blagostanja, naši iskusni treneri su tu da
             vas vode na svakom koraku.{" "}
-          </span>
-          <span className="inline-block bg-yellow-300 p-2 my-1 mx-2">
+          </motion.span>
+          <motion.span
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ delay: 0.4, duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, x: 100 },
+            }}
+            className="inline-block bg-yellow-300 p-2 my-1 mx-2"
+          >
             Ne propustite ovu priliku da promenite svoj život. Zakažite svoju
             trenersku sesiju sada i krenite na put samootkrivanja i uspeha. Moć
             promene je u vašim rukama.
-          </span>
-          <span className="inline-block bg-oliveDark p-2 text-yellowDark my-1 mx-2">
+          </motion.span>
+          <motion.span
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ delay: 0.6, duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, y: 100 },
+            }}
+            className="inline-block bg-oliveDark p-2 text-yellowDark my-1 mx-2"
+          >
             Kliknite na dugme ispod da biste započeli svoje trenersko putovanje.
-          </span>
+          </motion.span>
         </p>
 
-        <button className="btn mt-10">Book</button>
+        <motion.button
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ delay: 0.8, duration: 0.8 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 100 },
+          }}
+          className="btn mt-10 cursor-pointer"
+        >
+          Book
+        </motion.button>
       </div>
     </Layout>
   );
