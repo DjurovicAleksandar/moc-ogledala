@@ -1,5 +1,3 @@
-import coaching from "../../../assets/images/services/coaching/section2.jpg";
-
 function Card({ title, text, href }) {
   return (
     <>
